@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Countdown</title>
     <link href="style.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -32,15 +32,10 @@
         Countdown Timer
       </h1>
       <div id="display_area">00 d : 00 h : 00 m : 00 s</div>
-      <div>
-        <form
-          style="margin-top: 5%; display: flex; margin-left: 30%"
-          class="popup"
-          onclick="myFunction()"
-        >
-          <span class="popuptext" id="myPopup">Select date and time</span>
+      <div style="text-align: center">
+        <form style="display: block; margin-left: auto; margin-right: auto">
           <br /><img
-            style="margin-left: 1%; margin-right: 1%"
+            style="margin-right: 1%"
             src="images/finger-of-a-hand-pointing-to-right-direction.png"
             height="30 px"
             width="30px"
@@ -48,7 +43,7 @@
           <input
             style="
               cursor: pointer;
-              padding: 1%;
+              padding: 2%;
               border: 2px solid rgb(19, 19, 19);
               border-radius: 30px;
             "
@@ -57,8 +52,9 @@
             id="time_date"
             name="time_date"
             placeholder="hello"
+            title="Select date and time"
           /><img
-            style="margin-left: 1%; margin-right: 1%"
+            style="margin-left: 1%"
             src="images/hand-pointing-to-left-direction.png"
             height="30 px"
             width="30px"

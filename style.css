@@ -6,14 +6,13 @@ body{
 }
 
 .main{
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     margin-top: 10%;
     position: relative;
     padding: 5%;
     margin: auto;
     margin-top: 5%;
-    /* opacity: 0.6; */
    width: fit-content;
     box-shadow:10px 10px 10px 10px  rgba(155, 80, 168, 0.74) ;
     border: 6px outset rgb(215, 121, 241);
@@ -35,59 +34,3 @@ body{
     
     
 }
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-    
-    
-  }
-  
-  /* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 130%;
-    left: 100%;
-    margin-left: -500px;
-  }
- 
-  
-  /* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;   
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }

@@ -1,11 +1,9 @@
 
-var countDownDate = 0; // Initialize the countdown date as 0
+var countDownDate = 0; 
 
-// Timer variable to track the setInterval
 var countdownTimer;
 
 function start() {
-  // Get the date and time from the user input
   var userDateTimeInput = document.getElementById("time_date").value;
   countDownDate = new Date(userDateTimeInput).getTime();
 
@@ -15,8 +13,8 @@ function start() {
     return;
   }
 
-  // Start or restart the countdown
-  clearInterval(countdownTimer); // Clear any previous countdown
+  
+  clearInterval(countdownTimer); 
   countdownTimer = setInterval(updateCountdown, 1000);
 }
 
@@ -46,13 +44,8 @@ function updateCountdown() {
 
   if (distance < 0) {
     clearInterval(countdownTimer);
-    alert("Expired");
+    alert("Reached to your goal 🎉 OR Expired 🚫");
     document.getElementById("display_area").innerHTML = "00 d : 00 h : 00 m : 00 s";
   }
-}
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
 
-
+}
